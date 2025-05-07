@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+.top-banner {
+    position: relative; /* Establishes positioning context */
+    width: 100%;
+    height: 20px;
+    background: var(--cor-azul);
+    height: 30px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--cor-branca-botoes);
+}
+
+.desconto { 
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+.top-banner .highlight {
+    font-weight: 700;
+    background-color: rgba(98, 32, 193, 1); /* Subtle highlight */
+    padding: 2px 4px;
+    border-radius: 3px;
+    margin: 0 2px;
+}
+
+@media (max-width: 768px) {
+    .top-banner {
+        height: auto; /* Altura automática para se adaptar ao conteúdo */
+        padding: 8px 5px; /* Reduz o padding horizontal */
+        font-size: 12px; /* Reduz o tamanho da fonte */
+        line-height: 18px; /* Reduz o espaçamento entre linhas */
+        flex-direction: column; /* Empilha o conteúdo em telas muito pequenas se necessário */
+        text-align: center; /* Garante que o texto fique centralizado */
+    }
+    
+    .top-banner .highlight {
+        padding: 1px 3px; /* Reduz o padding do destaque */
+        font-size: 12px; /* Tamanho da fonte do destaque */
+        margin: 0 1px; /* Reduz as margens laterais */
+    }
+}
+
+/* Para telas muito pequenas (abaixo de 375px) */
+@media (max-width: 768px) {
+    .top-banner {
+        font-size: 11px; /* Reduz ainda mais o tamanho da fonte */
+        padding: 6px 3px; /* Reduz ainda mais o padding */
+    }
+    
+    .top-banner .highlight {
+        font-size: 11px; /* Tamanho da fonte do destaque para telas muito pequenas */
+    }
+}

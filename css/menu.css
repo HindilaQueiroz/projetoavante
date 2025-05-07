@@ -1,0 +1,174 @@
+/* Estilos responsivos para telas DESKTOP */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Container fixo do topo da página */
+.topo-fixo {
+  position: fixed;
+  background-color: var(--cor-branca-botoes);
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+/* Área de navegação principal do topo */
+.menu-topo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: none;
+  padding-top: 0;
+  padding-bottom: 8px;
+}
+
+/* Botão "Todas as Categorias" com ícone e texto */
+.menu-categorias {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--cor-preta);
+  cursor: pointer;
+  margin-top: -10px;
+}
+
+.menu-categorias:hover {
+  color: var(--cor-azul);
+}
+
+/* Ícone de menu sanduíche (três linhas horizontais) */
+.sanduiche {
+  width: 14px;
+  height: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sanduiche span {
+  height: 2px;
+  background: var(--cor-preta);
+  border-radius: 1px;
+}
+
+.menu-categorias.ativo .sanduiche span {
+  border: 2px solid var(--cor-azul);
+}
+
+/* Navegação principal com os links do menu */
+.nav-principal {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-principal a {
+  text-decoration: none;
+  color: var(--cor-preta);
+  font-size: 14px;
+}
+
+/* Submenu exibido ao interagir com o menu principal */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 180px;
+  left: 200px;
+  width: 1150px;
+  background: #fff;
+  box-shadow: 0 2px 6px var(--cor-preta);
+  padding: 16px;
+  gap: 16px;
+  z-index: 10;
+}
+
+.submenu.ativo {
+  display: flex;
+}
+
+/* Coluna de itens dentro do submenu */
+.coluna {
+  flex: 1;
+}
+
+.coluna h4 {
+  color: var(--cor-azul);
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.coluna ul {
+  list-style: none;
+}
+
+.coluna ul li {
+  font-size: 14px;
+  color: var(--cor-fonte-menu);
+  margin-bottom: 4px;
+  display: flex;
+  margin-left: 2px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Ícone de seta dentro da lista do submenu */
+.seta {
+  font-size: 14px;
+  color: var(--cor-fonte-menu);
+}
+
+/* Cartão promocional exibido no submenu */
+.card-promo {
+  width: 236px;
+  height: 298px;
+  top: 356px;
+  left: 1236px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: linear-gradient(90deg, rgba(0,0,0,0.75) -20.45%, rgba(239, 18, 176, 0) 138.31%);
+}
+
+/* Texto promocional dentro do cartão */
+.texto-promo {
+  position: absolute;
+  top: 60px;
+  left: 910px;
+  width: 127px;
+  height: 207px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: -0.5%;
+  color: var(--cor-branca-botoes);
+  z-index: 1;
+}
+
+.texto-promo strong {
+  font-weight: 700;
+  letter-spacing: 0%;
+  color: var(--cor-branca-botoes);
+}
+
+/* Botão "ver mais" dentro do cartão promocional */
+.botao-ver {
+  position: absolute;
+  width: 116px;
+  height: 38px;
+  top: 250px;
+  left: 910px;
+  border: 1px solid var(--cor-branca-botoes);
+  font-family: 'Heebo', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--cor-branca-botoes);
+  background: transparent;
+  cursor: pointer;
+}

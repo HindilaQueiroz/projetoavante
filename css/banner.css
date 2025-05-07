@@ -1,0 +1,204 @@
+/* Estilos responsivos para telas DESKTOP */
+
+/* Container do banner principal */
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    background-color: rgba(231, 231, 234, 1);
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 190px;
+}
+
+/* Imagem do banner */
+.banner-image {
+    position: absolute;
+    left: 10%;
+    top: 0;
+    width: 35;
+    height: 100%;
+    max-width: 685px;
+    max-height: 510px;
+    object-fit: contain;
+    object-position: center left;
+    mix-blend-mode: darken;
+}
+  
+/* Container para o conteúdo de texto */
+.text-content {
+    position: absolute;
+    left: 49%;
+    top: 30%;
+    width: 30%;
+    height: 43%;
+    max-width: 576px;
+    max-height: 224px;
+}
+  
+/* Linha de texto genérica */
+.line {
+    position: absolute;
+    white-space: nowrap;
+}
+  
+/* Primeira linha de texto do banner */
+.line-1 {
+    width: 99%;
+    height: 60%;
+    top: -11%;
+    left: 0.09%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 100px;
+    line-height: 1;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: var(--cor-preta);
+}
+  
+/* Classe de peso negrito */
+.negrito {
+    font-weight: 700;
+}
+  
+/* Classe de peso leve */
+.light {
+    font-weight: 400;
+}
+  
+/* Segunda linha de texto do banner */
+.line-2 {
+    width: 100%;
+    height: 15%;
+    top: 55%;
+    left: 0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--cor-azul);
+}
+  
+/* Terceira linha de texto do banner */
+.line-3 {
+    width: 42%;
+    height: 36;
+    top: 75%;
+    left: 28%;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: var(--cor-azul);
+}
+  
+/* Estilos responsivos para telas menores que 768px */
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 768px) {
+  
+    /* Container do banner principal (mobile) */
+    .banner-container {
+      height: 500px;
+      margin-top: 180px;
+    }
+  
+    /* Imagem do banner (mobile) */
+    .banner-image {
+      left: -200px;
+      width: 100%;
+      max-width: none;
+    }
+  
+    /* Container para o conteúdo de texto (mobile) */
+    .text-content {
+      left: 400px;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  
+    /* Linha de texto genérica (mobile) */
+    .line {
+      position: relative;
+      white-space: normal;
+    }
+  
+    /* Primeira linha de texto do banner (mobile) */
+    .line-1 {
+      width: 50%;
+      height: auto;
+      font-size: 100px;
+      top: 1px;
+      left: 0;
+      text-align: center;
+    }
+  
+    /* Segunda linha de texto do banner (mobile) */
+    .line-2 {
+      font-size: 13px;
+      top: 15px;
+      left: 0;
+      font-weight: 700px;
+    }
+  
+    /* Terceira linha de texto do banner (mobile) */
+    .line-3 {
+      width: 100%;
+      font-size: 70px;
+      top: 10px;
+      left: 0;
+    }
+}
+
+/* Estilos responsivos para telas menores que 360px */
+
+@media (max-width: 360px) {
+  .banner-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 20px 10px;
+    gap: 18px;
+    margin-top: 200px;
+  }
+
+  .banner-image {
+    position: static;
+    width: 60%; /* aumentamos de 50% para 60% */
+    height: auto;
+    max-width: 100%;
+  }
+
+  .text-content {
+    position: static;
+    width: 40%; /* reduzido para equilibrar o espaço */
+    text-align: left;
+    transform: none;
+  }
+
+  .line-1 {
+    font-size: 30px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .line-2 {
+    font-size: 11px;
+    top: 0;
+    left: 0;
+  }
+
+  .line-3 {
+    font-size: 22px;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}

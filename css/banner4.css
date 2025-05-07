@@ -1,0 +1,94 @@
+/* Estilos responsivos para telas DESKTOP */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container principal do banner com imagem de fundo */
+.banner4 {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  height: 660px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 36px auto;
+  overflow: hidden;
+}
+
+.banner4::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Imagem de fundo com efeito de desfoque */
+.fundo-banner4 {   
+  filter: blur(4px);
+  z-index: 0;
+}
+
+/* Faixa azul sobreposta com texto centralizado */
+.faixa4 {
+  position: absolute;
+  width: 100%;
+  height: 132px;
+  background: var(--cor-azul);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+/* Estilização do texto dentro da faixa */
+.faixa4 p {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 140%;
+  color: var(--cor-branca-botoes);
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+/* Estilos responsivos para telas menores que 768px */
+
+ /* Ajuste de margem superior do banner em telas menores */
+@media (max-width: 768px) {
+  .banner4 {
+    margin-top: 160px;
+  }
+}
+
+/* Estilos responsivos para telas menores que 360px */
+@media (max-width: 360px) {
+  /* Aumenta a altura da faixa para acomodar o texto */
+  .faixa4 {
+    height: 180px;
+  }
+  
+  /* Reduz o tamanho da fonte e ajusta o espaçamento para melhor legibilidade */
+  .faixa4 p {
+    font-size: 22px;
+    line-height: 130%;
+    padding: 0 15px;
+  }
+  
+  /* Ajusta a altura do banner para manter a proporção */
+  .banner4 {
+    height: 500px;
+    margin-top: 200px;
+  }
+}
+
+

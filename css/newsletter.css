@@ -1,0 +1,201 @@
+/* Estilos responsivos para telas DESKTOP */
+
+/* Container principal da seção de newsletter */
+.newsletter-container {
+  width: 1260px;
+  height: 227px;
+  margin: 16px auto; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 42px;
+}
+
+/* Título da newsletter */
+.newsletter-container h2 {
+  width: 401px;
+  height: 27px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  margin-top: 3px;
+  text-align: center;
+}
+
+/* Link destacado dentro do título */
+.newsletter-container h2 a {
+  color: var(--cor-azul);
+  text-decoration: none;
+}
+
+/* Caixa de fundo que envolve o formulário */
+.newsletter-box {
+  width: 1260px;
+  height: 176px;
+  background: var(--cor-linhas);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+/* Container do formulário de inscrição */
+.newsletter-form {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
+/* Grupo email e texto */
+.newsletter-form input[type="text"],
+.newsletter-form input[type="email"] {
+  width: 280px;
+  height: 48px;
+  border-radius: 8px;
+  background: var(--cor-branca-botoes);
+  border: none;
+  padding-left: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+/* Grupo que contém o checkbox de aceitação */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 300px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 100%;
+  color: rgba(101, 101, 101, 1);
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1px solid var(--cor-linhas);
+}
+
+.checkbox-group a {
+  text-decoration: underline;
+  color: rgba(101, 101, 101, 1);
+}
+
+/* Botão de envio do formulário */
+.newsletter-form button {
+  width: 121px;
+  height: 48px;
+  border-radius: 8px;
+  padding: 14px 24px;
+  background: var(--cor-azul);
+  color: var(--cor-branca-botoes);
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+/* Estilos responsivos para telas menores que 768px */
+
+
+/* Container principal da newsletter (mobile) */
+@media screen and (max-width: 768px) {
+  .newsletter-container {
+      width: 100%;
+      height: 330px;
+      margin: 0 auto;
+      padding: 0 14px;
+      gap: 10px;
+      margin-top: 60px;
+      margin-bottom: 50px;
+  }
+
+  /* Título da newsletter (mobile) */
+  .newsletter-container h2 {
+      width: 100%;
+      height: 22px;
+      font-size: 16px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      text-align: center;
+  }
+
+  /* Caixa que envolve o formulário (mobile) */
+  .newsletter-box {
+      width: 90%;
+      max-width: 600px;
+      height: 284px;
+      border-radius: 8px;
+      margin-top: 10px;
+      padding: 15px;
+      box-sizing: border-box;
+  }
+
+  /* Formulário da newsletter (mobile) */
+  .newsletter-form {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      gap: 16px;
+      justify-content: flex-start;
+      padding: 10px 0;
+  }
+
+  /* Campos de entrada de texto e e-mail (mobile) */
+  .newsletter-form input[type="text"],
+  .newsletter-form input[type="email"] {
+      width: 100%;
+      height: 48px;
+      margin-bottom: 5px;
+  }
+
+  /* Grupo do checkbox (mobile) */
+  .checkbox-group {
+      width: 100%;
+      font-size: 12px;
+      margin-bottom: 5px;
+      justify-content: flex-start;
+  }
+
+  /* Contador de usuários visíveis na newsletter (mobile) */
+  .users-count {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      display: flex;
+      align-items: center;
+  }
+
+  /* Imagens de usuários no contador (mobile) */
+  .users-count img {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      margin-left: -8px;
+  }
+
+  /* Texto com número de usuários (mobile) */
+  .users-count span {
+      margin-left: 5px;
+      font-size: 14px;
+      font-weight: 700;
+  }
+
+  /* Botão de envio (mobile) */
+  .newsletter-form button {
+      width: 100%;
+      height: 48px;
+      margin-top: 5px;
+  }
+  }

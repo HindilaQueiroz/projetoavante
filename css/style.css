@@ -1,0 +1,34 @@
+@import url("/css/topo.css");
+@import url("/css/busca.css");
+@import url("/css/menu.css");
+@import url("/css/menudepartamento.css");
+@import url("/css/banner.css");
+@import url("/css/carrossel1.css");
+@import url("/css/banner1.css");
+@import url("/css/banner2.css");
+@import url("/css/banner3.css");
+@import url("/css/carrossel2.css");
+@import url("/css/banner4.css");
+@import url("/css/newsletter.css");
+@import url("/css/footer.css");
+@import url("/css/mobile_topo.css");
+
+:root{
+    --cor-azul:rgba(0, 92, 255, 1); /*tdsas cores azuldo projeto*/
+    --cor-preta: rgba(0, 0, 0, 1); /*H*/
+    --cor-linhas: rgba(221, 221, 221, 1); /*linhas de contorno*/
+    --cor-branca-botoes: rgba(255, 255, 255, 1);
+    --cor-fonte-menu:rgba(101,101,101,1);
+}
+
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 1);
+    background-color: #fff; /* Added background to see header clearly */
+}
+
+
+
+

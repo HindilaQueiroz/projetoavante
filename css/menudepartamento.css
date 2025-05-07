@@ -1,0 +1,149 @@
+/* Estilos responsivos para telas DESKTOP */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Área superior de navegação de departamentos */
+.menu-topo-DEPARTAMENTO {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 0;
+  padding-bottom: 8px;
+  position: relative;
+}
+
+/* Botão que exibe as opções de departamentos */
+.menu-DEPARTAMENTO {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--cor-preta);
+  cursor: pointer;
+  margin-left: 32px;
+}
+
+.menu-DEPARTAMENTO:hover {
+  color: var(--cor-azul);
+}
+
+/* Caixa de submenu com as categorias de departamentos */
+.DEPARTAMENTO {
+  display: none;
+  position: absolute;
+  top: 180px;
+  left: 200px;
+  width: 1150px;
+  background: #fff;
+  box-shadow: 0 2px 6px var(--cor-preta);
+  padding: 16px;
+  gap: 16px;
+  z-index: 10;
+}
+
+.DEPARTAMENTO.ativo {
+  display: flex;
+}
+
+/* Coluna de títulos das categorias dentro do submenu */
+.coluna1 {
+  flex: 1;
+}
+
+.coluna1 h4 {
+  color: var(--cor-azul);
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.coluna1 ul {
+  list-style: none;
+}
+
+/* Itens de categoria listados dentro da coluna */
+.coluna1 ul li {
+  font-size: 14px;
+  color: var(--cor-fonte-menu);
+  margin-bottom: 4px;
+  display: flex;
+  margin-left: 2px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Cartão de promoção exibido dentro do submenu */
+.card-promo {
+  width: 236px;
+  height: 298px;
+  top: 356px;
+  left: 1236px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: linear-gradient(90deg, rgba(0,0,0,0.75) -20.45%, rgba(0,0,0,0) 138.31%);
+}
+
+/* Texto descritivo da promoção */
+.texto-promo {
+  position: absolute;
+  top: 60px;
+  left: 910px;
+  width: 127px;
+  height: 207px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: -0.5%;
+  color: var(--cor-branca-botoes);
+  z-index: 1;
+}
+
+.texto-promo strong {
+  font-weight: 700;
+  letter-spacing: 0%;
+  color: var(--cor-branca-botoes);
+}
+
+/* Botão para ver mais sobre a promoção */
+.botao-ver {
+  position: absolute;
+  width: 116px;
+  height: 38px;
+  top: 250px;
+  left: 910px;
+  border: 1px solid var(--cor-branca-botoes);
+  font-family: 'Heebo', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Ajustes responsivos para telas menores */
+@media (max-width: 768px) {
+  .menu-topo .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .nav-principal {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-principal a {
+    padding: 8px 0;
+    width: 100%;
+    border-bottom: 1px solid var(--cor-branca-botoes);
+  }
+}

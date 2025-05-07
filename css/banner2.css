@@ -1,0 +1,411 @@
+/* Estilos responsivos para telas DESKTOP */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Seção principal do banner */
+.banner2 {
+  width: 100%;
+  height: 800px;
+  margin: 0 auto;
+  background: rgba(222, 222, 222, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 36px;
+}
+
+/* Container interno do banner */
+.container_banner2 {
+  width: 1177px;
+  height: 728px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Caixa de texto do banner */
+.text-box2 {
+  width: 476px;
+  height: 567px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Título da caixa de texto */
+.text-box2 h1 {
+  width: 481px;
+  height: 42px;
+  font-family: 'Nunito';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 140%;
+  letter-spacing: 4%;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(79, 79, 79, 1);
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+
+/* Bloco de informações com ícone e texto */
+.info2 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: transparent;
+  height: 125px;
+}
+
+/* Ícone dentro do bloco de informações */
+.info2 img {
+  width: 90px;
+  height: 90px;
+}
+
+/* Texto do bloco de informações */
+.info2 p {
+  font-size: 16px;
+  color: rgba(79, 79, 79, 1);
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Caixa da imagem principal */
+.image-box2 {
+  width: 652px;
+  height: 728px;
+}
+
+/* Imagem dentro da caixa de imagem */
+.image-box2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Estilos responsivos para telas menores que 768px */
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+
+  /* Seção principal do banner - versão mobile */
+  .banner2 {
+    height: auto;
+    padding: 0px;
+    margin-top: 120px;
+    background: var(--cor-branca-botoes);
+  }
+
+  /* Container interno do banner - versão mobile */
+  .container_banner2 {
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    max-height: 750px;
+  }
+
+  /* Caixa da imagem - versão mobile */
+  .image-box2 {
+    width: 100%;
+    margin-bottom: 20px;
+    order: 1;
+    margin-top: 28px;
+  }
+
+  /* Imagem dentro da caixa de imagem - versão mobile */
+  .image-box2 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* Caixa de texto - versão mobile */
+  .text-box2 {
+    width: 100%;
+    align-items: flex-start;
+    order: 2;
+    margin-left: 19px;
+  }
+
+  /* Título da caixa de texto - versão mobile */
+  .text-box2 h1 {
+    font-size: 24px;
+    margin-top: 100px;
+    font-weight: 700px;
+    line-height: 140%;
+  }
+
+  /* Bloco de informações - versão mobile */
+  .info2 {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  /* Ícone do bloco de informações - versão mobile */
+  .info2 img {
+    width: 70px;
+    height: 90px;
+    margin-bottom: 18px;
+  }
+
+  /* Texto do bloco de informações - versão mobile */
+  .info2 p {
+    text-align: left;
+    font-size: 14px;
+    margin-right: 80px;
+    margin-left: 100px;
+    margin-top: -110px;
+    margin-bottom: 16px;
+  }
+}
+
+/* Estilos responsivos para telas DESKTOP */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Seção principal do banner */
+.banner2 {
+  width: 100%;
+  height: 800px;
+  margin: 0 auto;
+  background: rgba(222, 222, 222, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 36px;
+}
+
+/* Container interno do banner */
+.container_banner2 {
+  width: 1177px;
+  height: 728px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Caixa de texto do banner */
+.text-box2 {
+  width: 476px;
+  height: 567px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Título da caixa de texto */
+.text-box2 h1 {
+  width: 481px;
+  height: 42px;
+  font-family: 'Nunito';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 140%;
+  letter-spacing: 4%;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(79, 79, 79, 1);
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+
+/* Bloco de informações com ícone e texto */
+.info2 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: transparent;
+  height: 125px;
+}
+
+/* Ícone dentro do bloco de informações */
+.info2 img {
+  width: 90px;
+  height: 90px;
+}
+
+/* Texto do bloco de informações */
+.info2 p {
+  font-size: 16px;
+  color: rgba(79, 79, 79, 1);
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Caixa da imagem principal */
+.image-box2 {
+  width: 652px;
+  height: 728px;
+}
+
+/* Imagem dentro da caixa de imagem */
+.image-box2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Estilos responsivos para telas menores que 768px */
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+
+  /* Seção principal do banner - versão mobile */
+  .banner2 {
+    height: auto;
+    padding: 0px;
+    margin-top: 120px;
+    background: var(--cor-branca-botoes);
+  }
+
+  /* Container interno do banner - versão mobile */
+  .container_banner2 {
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    max-height: 750px;
+  }
+
+  /* Caixa da imagem - versão mobile */
+  .image-box2 {
+    width: 100%;
+    margin-bottom: 20px;
+    order: 1;
+    margin-top: 28px;
+  }
+
+  /* Imagem dentro da caixa de imagem - versão mobile */
+  .image-box2 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* Caixa de texto - versão mobile */
+  .text-box2 {
+    width: 100%;
+    align-items: flex-start;
+    order: 2;
+    margin-left: 19px;
+  }
+
+  /* Título da caixa de texto - versão mobile */
+  .text-box2 h1 {
+    font-size: 24px;
+    margin-top: 100px;
+    font-weight: 700;
+    line-height: 140%;
+  }
+
+  /* Bloco de informações - versão mobile */
+  .info2 {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  /* Ícone do bloco de informações - versão mobile */
+  .info2 img {
+    width: 70px;
+    height: 90px;
+    margin-bottom: 18px;
+  }
+
+  /* Texto do bloco de informações - versão mobile */
+  .info2 p {
+    text-align: left;
+    font-size: 14px;
+    margin-right: 80px;
+    margin-left: 100px;
+    margin-top: -110px;
+    margin-bottom: 16px;
+  }
+}
+
+/* Estilos específicos para telas muito pequenas (360px ) */
+@media (max-width: 360px) {
+  /* Ajustando a margem superior e inferior do banner */
+  .banner2 {
+    margin-top: 80px; 
+    margin-bottom: 10px; 
+    height: auto;
+    max-height: 530px; 
+  }
+  
+  /* Ajustando o container do banner */
+  .container_banner2 {
+    padding: 10px 0; 
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  /* Título da caixa de texto - versão mobile pequeno */
+  .text-box2 h1 {
+    width: 90%;
+    height: auto;
+    font-size: 20px;
+    margin-top: 15px; 
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: left;
+  }
+  
+  /* Caixa de texto - ajustes para tela menor */
+  .text-box2 {
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(100% - 20px);
+    margin-bottom: 10px; 
+  }
+  
+  /* Bloco de informações - ajustes espaço entre as frases */
+  .info2 {
+    width: 100%;
+    margin-bottom: 35px; 
+  }
+  
+  /* Ícone do bloco de informações - ajustes o icon azul */
+  .info2 img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px; 
+  }
+  
+  /* Texto do bloco de informações - ajustes na altura da frase */
+  .info2 p {
+    font-size: 13px;
+    margin-right: 20px;
+    margin-left: 80px;
+    margin-top: -70px; 
+    width: calc(100% - 100px);
+    line-height: 1.3;
+    margin-bottom: 5px; 
+  }
+  
+  /* Caixa da imagem - ajustes para tela menor */
+  .image-box2 {
+    height: auto;
+    margin-top: 5px; 
+    margin-bottom: 5px; 
+  }
+  
+  /* Compactando todo o banner para mobile */
+  .banner2:last-child {
+    margin-bottom: 20px; 
+  }
+}
